@@ -1,2 +1,2 @@
-# Clientes-pages
-Repositório destinado aos Projetos dos clientes 
+#Shirley-Santos
+Repositório destinado ao projeto de studio de beleza de Shirley santos
