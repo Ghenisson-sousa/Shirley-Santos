@@ -81,6 +81,12 @@ nav a {
   text-align: center;
   background: #C9A24D;
 }
+.hero {
+  background: 
+    linear-gradient(rgba(0,0,0,0.45), rgba(0,0,0,0.45)),
+    url('img/hero-image.jpg') center/cover no-repeat;
+  color: #fff;
+}
 
 /*Serviços*/
 
