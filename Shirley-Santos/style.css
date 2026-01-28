@@ -137,18 +137,50 @@ nav a {
   color: #555;
 }
 
+/*grid dos cards e respobsividade */
+.cards{
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+}
+
+/* Tablet */
+@media (max-width: 1024px) {
+  .cards {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* Celular */
+@media (max-width: 600px) {
+  .cards {
+    grid-template-columns: 1fr;
+  }
+}
+
 /*sobre*/
 
 .sobre {
+  padding: 60px 20px;
+}
+
+.sobre-content {
   display: flex;
-  gap: 20px;
-  padding: 40px 20px;
   align-items: center;
-  flex-wrap: wrap;
+  gap: 40px;
 }
 
 .sobre-texto {
   flex: 1;
+}
+
+.sobre-texto h2 {
+  margin-bottom: 16px;
+}
+
+.sobre-texto p {
+  margin-bottom: 12px;
+  line-height: 1.6;
 }
 
 .sobre-imagem {
@@ -157,7 +189,13 @@ nav a {
 
 .sobre-imagem img {
   width: 100%;
-  border-radius: 10px;
+  border-radius: 8px;
+}
+
+@media (max-width: 768px) {
+  .sobre-content {
+    flex-direction: column;
+  }
 }
 
 /*contato*/
@@ -243,4 +281,4 @@ nav a {
   nav.active {
     display: flex;
   }
-}
+    }
