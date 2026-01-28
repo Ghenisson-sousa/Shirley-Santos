@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Nome do Negócio</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="navbar">
+  <div class="logo">Shirley Santos</div>
+
+  <div class="menu-toggle" id="menu-toggle">
+    ☰
+  </div>
+
+  <nav id="menu">
+    <a href="#inicio">Início</a>
+    <a href="#sobre">Sobre</a>
+    <a href="#servicos">Serviços</a>
+    <a href="#contato">Contato</a>
+  </nav>
+</header>
+
+<section class="hero" id="inicio">
+  <h1>Seu negócio na internet</h1>
+  <p>Uma página simples, rápida e profissional</p>
+   <a 
+      href="https://wa.me/5599999999999" 
+      target="_blank" 
+      class="btn-whatsapp">
+      Falar no WhatsApp
+    </a>
+ <!-- <a href="#contato" class="btn">Fale no WhatsApp</a> -->
+</section>
+
+
+
+<section id="servicos">
+  <h2>Nossos Serviços</h2>
+
+  <div class="cards">
+    <div class="card">
+      <h3>Site Institucional</h3>
+      <img src="img/servico1.jpg" alt="Site institucional">
+      <p>Página simples para divulgar seu negócio de forma profissional.</p>
+    </div>
+
+    <div class="card">
+      <h3>Landing Page</h3>
+      <img src="img/servico2.jpg" alt="Landing page">
+      <p>Página focada em conversão e contato direto com clientes.</p>
+    </div>
+
+    <div class="card">
+      <h3>Presença Digital</h3>
+      <img src="img/servico3.jpg" alt="Presença digital">
+      <p>Divulgação online para fortalecer sua imagem profissional.</p>
+    </div>
+  </div>
+</section>
+
+<section id="contato">
+  <div class="contato-container">
+
+    <div class="contato-texto">
+      <h2>Entre em Contato</h2>
+      <p>
+        Ficou interessado ou quer tirar alguma dúvida?
+        Clique no botão abaixo e fale diretamente conosco pelo WhatsApp.
+      </p>
+
+      <a 
+        href="https://wa.me/5599999999999" 
+        target="_blank" 
+        class="btn-whatsapp">
+        Falar no WhatsApp
+      </a>
+    </div>
+
+    <div class="contato-mapa">
+      <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3916.584980527832!2d-37.0670737!3d-10.9946657!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x71ab0e0335806fb%3A0x539f5712576aa19!2sGBarbosa%20Hiper%20Sul!5e0!3m2!1spt-BR!2sbr!4v1769511511019!5m2!1spt-BR!2sbr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+
+  </div>
+</section>
+
+  <footer>
+    <p>© Nome do Negócio</p>
+  </footer>
+
+
+<script>
+  const toggle = document.getElementById('menu-toggle');
+  const menu = document.getElementById('menu');
+
+  toggle.addEventListener('click', () => {
+    menu.classList.toggle('active');
+  });
+</script>
+</body>
+</html>
